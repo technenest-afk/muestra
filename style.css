@@ -1,25 +1,54 @@
-/* RESET BÁSICO para eliminar márgenes y paddings por defecto */
+/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Fundamental para el layout */
+    box-sizing: border-box; 
 }
 
 /* ESTILOS GENERALES DEL CUERPO */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Tipografía profesional y legible */
-    line-height: 1.6; /* Mejora la lectura del texto */
-    background-color: #f4f4f4; /* Un gris muy claro, suave para la vista */
-    color: #333; /* Texto principal en gris oscuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más moderna */
+    line-height: 1.6; 
+    background-color: #f8f8f8; /* Gris muy claro */
+    color: #333; 
 }
 
-/* Estilo para los links de navegación */
+/* --- ESTILOS DEL ENCABEZADO (HEADER) --- */
+.header {
+    background-color: #ffffff; 
+    padding: 20px 50px; 
+    border-bottom: 3px solid #0056b3; /* Línea de marca (Azul fuerte) */
+    
+    /* PROPIEDADES FLEXBOX CLAVE para el diseño horizontal */
+    display: flex; 
+    justify-content: space-between; /* Separa el logo y el menú a los extremos */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo del Logo */
+.logo h1 {
+    font-size: 1.8em;
+    color: #0056b3; 
+    text-transform: uppercase;
+}
+
+/* Estilo de la Navegación (NAV) */
 .nav ul {
-    list-style: none; /* Quitamos las viñetas de la lista */
+    list-style: none;
+    display: flex; /* Hace la lista de links horizontal */
+}
+
+.nav li {
+    margin-left: 25px; /* Espacio entre cada link del menú */
 }
 
 .nav a {
-    text-decoration: none; /* Quitamos el subrayado de los links */
+    text-decoration: none; 
     color: #333;
-    padding: 0 15px;
+    font-weight: 600; /* Semi-negrita */
+    transition: color 0.3s; 
+}
+
+.nav a:hover {
+    color: #0056b3; /* Efecto hover al color de marca */
 }
