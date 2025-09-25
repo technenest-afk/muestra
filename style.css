@@ -1,0 +1,25 @@
+/* RESET BÁSICO para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para el layout */
+}
+
+/* ESTILOS GENERALES DEL CUERPO */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía profesional y legible */
+    line-height: 1.6; /* Mejora la lectura del texto */
+    background-color: #f4f4f4; /* Un gris muy claro, suave para la vista */
+    color: #333; /* Texto principal en gris oscuro */
+}
+
+/* Estilo para los links de navegación */
+.nav ul {
+    list-style: none; /* Quitamos las viñetas de la lista */
+}
+
+.nav a {
+    text-decoration: none; /* Quitamos el subrayado de los links */
+    color: #333;
+    padding: 0 15px;
+}
